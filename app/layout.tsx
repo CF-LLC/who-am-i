@@ -9,7 +9,6 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Who am I? | Browser Information Dashboard",
   description: "Discover everything your browser knows about you",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
