@@ -15,6 +15,9 @@ const nextConfig = {
   
   // Disable trailing slashes for GitHub Pages compatibility
   trailingSlash: false,
+  
+  // Add this to ensure assets are properly referenced
+  assetPrefix: '/who-am-i',
 };
 
 export default nextConfig;

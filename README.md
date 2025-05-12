@@ -2,6 +2,10 @@
 
 A browser information dashboard that shows everything your browser knows about you.
 
+## GitHub Pages Deployment
+
+This site is deployed at: [https://cf-llc.github.io/who-am-i/](https://cf-llc.github.io/who-am-i/)
+
 ## Features
 
 - Displays detailed user information (location, browser, system, network, battery)
@@ -13,30 +17,25 @@ A browser information dashboard that shows everything your browser knows about y
 This site is configured for GitHub Pages deployment. To deploy:
 
 1. Fork this repository
-2. Enable GitHub Pages in your repository settings
-3. Set the GitHub Pages source to the `gh-pages` branch
-4. The GitHub Actions workflow will automatically build and deploy the site
+2. Enable GitHub Pages in your repository settings:
+   - Go to Settings > Pages
+   - Set the Source to "GitHub Actions"
+3. The GitHub Actions workflow will automatically build and deploy the site
 
-### Manual Deployment
+### Troubleshooting GitHub Pages
 
-If you prefer to deploy manually:
+If you encounter a 404 error after deployment:
 
-\`\`\`bash
-# Install dependencies
-npm install
-
-# Build for production
-npm run build
-
-# The static site will be generated in the 'out' directory
-# You can then deploy this directory to any static hosting service
-\`\`\`
+1. Make sure GitHub Pages is enabled in your repository settings
+2. Ensure the gh-pages branch exists and contains the built files
+3. Check that the .nojekyll file exists in the root of your gh-pages branch
+4. Verify that the basePath and assetPrefix in next.config.mjs match your repository name
 
 ## Local Development
 
 \`\`\`bash
 # Install dependencies
-npm install
+npm install --legacy-peer-deps
 
 # Start development server
 npm run dev
